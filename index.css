@@ -174,3 +174,35 @@ header .menu ul li a{
     color: white;
     font-weight: bold;
 }
+
+.inicioS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.inicio_sesion{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.inicio_sesion h1{
+    margin-bottom: 20px;
+}
+
+.inicio_sesion form{
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+
+.inicio_sesion form .boton_inicio{
+    width: 150px;
+    margin: auto;
+    padding: 5px;
+}
