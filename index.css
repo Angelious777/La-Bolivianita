@@ -123,7 +123,7 @@ header .menu ul li a{
 }
 
 .registro{
-    height: 400px;
+    height: 450px;
     border: 2px solid white;
     border-radius: 30px;
     width: 500px;
@@ -135,13 +135,15 @@ header .menu ul li a{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: calc(50% - 100px);
+    top: calc(50% - 150px);
     left: calc(50% - 250px);
     z-index: 2;
+    transform: 2s;
 }
 
 .registro h1{
     text-align: center;
+    cursor: default;
 }
 
 .registro form{
@@ -155,24 +157,44 @@ header .menu ul li a{
     width: 300px;
 }
 
-.registro form label{
+.registro  label{
     font-weight: bold;
 }
 
 .registro form .boton_registro{
-    width: 100px;
+    width: 200px;
     margin: auto;
     padding: 10px;
+    padding-inline: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.registro form a{
+.registro a{
     color: white;
     font-weight: bold;
+}
+
+.registro .cerrar{
+    position: absolute;
+    top: 10px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.registro .cerrar span{
+    cursor:pointer;
+    font-size: 40px;
 }
 
 .inicioS{

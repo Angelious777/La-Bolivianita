@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
@@ -45,10 +46,15 @@
         </div>
         <div class="slogan">
             Descubre la magia del cine boliviano, donde cada historia es una ventana a nuestra cultura. ¡Tu experiencia de streaming, ahora con sabor a Bolivia!
-            <button>Registrate ahora</button>
+            <button id="boton_registros" onclick="mostrar_cuadro_registros();">Registrate ahora</button>
         </div>
     </section>
-    <div class="registro">
+    <div class="registro" id="registro">
+        <div class="cerrar">
+            <span class="material-symbols-outlined" onclick="cerrar_registro()">
+            close
+            </span>
+        </div>
         <h1>Registrate ahora</h1>
         <form action="">
             <label for="">Ingresa tu nombre de usuario:</label>
@@ -62,5 +68,6 @@
         <label for="">Ya tienes cuenta?</label>
         <a href="C:\Users\ROGER\OneDrive\Escritorio\PROGRAMACION WEB\La Bolivianita\La-Bolivianita\Inicio_sesion.html">Iniciar Sesion</a>
     </div>
+    <script src="js.js"></script>
 </body>
 </html>
