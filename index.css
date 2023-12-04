@@ -14,9 +14,11 @@ body{
 header{
     display: flex;
     width: 100%;
-    background-color: rgb(125, 82, 135);
+    background-color: #504360;
     height: 80px;
     font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    color: white;
 }
 
 header .logo{
@@ -24,11 +26,15 @@ header .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 header .logo img{
     height: 100%;
+}
+
+header .logo p{
+    font-size: 30px;
 }
 
 header .menu{
@@ -39,13 +45,11 @@ header .menu ul{
     width: 100%;
     height: 100%;
     display: flex;
-    border: 1px solid black;
 }
 
 header .menu ul li{
     width: 100%;
     height: 100%;
-    border: 1px solid black;
     list-style: none;
 }
 
@@ -56,7 +60,32 @@ header .menu ul li a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 100;
+}
+
+header .menu ul li a .sombra{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu ul li a:hover{
+    background-color: white;
+    color: #504360;
+    transition: 1s;
+}
+
+header .menu ul li  a .sombra:hover{
+    background-color: white;
+    color:#504360;
+    box-shadow: 1px 1px 42px 9px rgba(255,255,255,0.99);
+    -webkit-box-shadow: 1px 1px 42px 9px rgba(255,255,255,0.99);
+    -moz-box-shadow: 1px 1px 42px 9px rgba(255,255,255,0.99);
+    transition: 1s;
+    z-index: 2;
 }
 
 .fondo_slider{
@@ -120,6 +149,7 @@ header .menu ul li a{
     padding: 20px;
     border: 1px solid black;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .registro{
@@ -127,41 +157,68 @@ header .menu ul li a{
     border: 2px solid white;
     border-radius: 30px;
     width: 500px;
-    background-color:rgb(125, 82, 135);
+    background-color:#504360;
     display: flex;
     flex-direction: column;
     padding: 20px;
     color: white;
     align-items: center;
     justify-content: center;
+
+
     position: absolute;
-    top: calc(50% - 150px);
+    /* top: calc(50% - 150px); */
+    top: -100vh;
     left: calc(50% - 250px);
     z-index: 2;
-    transform: 2s;
+    transform: 1s;
+    transition: 1s;
 }
 
-.registro h1{
+.registro_on{
+    height: 450px;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 500px;
+    background-color:#504360;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+
+    position: absolute;
+    top: calc(50% - 150px);
+    /* top: -100vh; */
+    left: calc(50% - 250px);
+    z-index: 2;
+    transform: 1s;
+    transition: 1s;
+}
+
+.contenedor_registro h1{
     text-align: center;
     cursor: default;
 }
 
-.registro form{
+.contenedor_registro form{
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-block: 30px;
 }
 
-.registro form input{
+.contenedor_registro form input{
     width: 300px;
 }
 
-.registro  label{
+.contenedor_registro  label{
     font-weight: bold;
 }
 
-.registro form .boton_registro{
+.contenedor_registro form .boton_registro{
     width: 200px;
     margin: auto;
     padding: 10px;
@@ -176,14 +233,15 @@ header .menu ul li a{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.registro a{
+.contenedor_registro a{
     color: white;
     font-weight: bold;
 }
 
-.registro .cerrar{
+.contenedor_registro .cerrar{
     position: absolute;
     top: 10px;
     padding-right: 20px;
@@ -192,7 +250,7 @@ header .menu ul li a{
     justify-content: right;
 }
 
-.registro .cerrar span{
+.contenedor_registro .cerrar span{
     cursor:pointer;
     font-size: 40px;
 }
@@ -228,3 +286,21 @@ header .menu ul li a{
     margin: auto;
     padding: 5px;
 }
+
+.cuadro{
+    background: purple;
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro .mostrador{
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro .mostrador .botones_mostrador ul{
+    display: flex;
+}
+

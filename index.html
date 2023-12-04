@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +24,7 @@
                 <li><a href="">Catalogo</a></li>
                 <li><a href="">Pagos</a></li>
                 <li><a href="">Contactos</a></li>
-                <li><a href="">Iniciar Sesion</a></li>
+                <li><a href=""><div class="sombra">Iniciar Sesion</div></a></li>
             </ul>
         </div>
     </header>
@@ -50,23 +53,55 @@
         </div>
     </section>
     <div class="registro" id="registro">
-        <div class="cerrar">
-            <span class="material-symbols-outlined" onclick="cerrar_registro()">
-            close
-            </span>
+        <div class="contenedor_registro">
+            <div class="cerrar">
+                <span class="material-symbols-outlined" onclick="cerrar_registro()">
+                close
+                </span>
+            </div>
+            <h1>Registrate ahora</h1>
+            <form action="">
+                <label for="">Ingresa tu nombre de usuario:</label>
+                <input type="text">
+                <label for="">Ingresa tu correo:</label>
+                <input type="email">
+                <label for="">Ingresa tu constrasena:</label>
+                <input type="password">
+                <input type="button" value="Registrarme" class="boton_registro">
+            </form>
+            <label for="">Ya tienes cuenta?</label>
+            <a href="C:\Users\ROGER\OneDrive\Escritorio\PROGRAMACION WEB\La Bolivianita\La-Bolivianita\Inicio_sesion.html">Iniciar Sesion</a>
+    
+        </div>    
+    </div>
+    <div class="cuadro" style="color: white;">
+        <h1>Tenemos las peliculas mas relevantes en la historia de Bolivia</h1>
+        <div class="mostrador">
+            <div class="botones_mostrador">
+                <ul>
+                    <li>Mas Popular</li>
+                    <li>Ultima Pelicula Publicada</li>
+                    <li>Los Clasicos</li>
+                </ul>
+            </div>
+            <div class="cuadros_mostrador">
+
+
+                <div class="cuadro_populares">
+                    <div class="imagen">
+                        <div class="titulo_imagen">
+                            Mi Socio 2
+                        </div>
+                        <img src="https://pics.filmaffinity.com/Mi_socio_2_0-257209535-large.jpg" alt="">
+                    </div> 
+                    <div class="texto_cuadro">
+                        Sinopsis: <br>
+                        En Mi Socio 2.0, Vito (70 años) sigue en sus acostumbradas y azarosas andanzas: después de lograr zafarse de un pleito de dinero y chantajes con el Patrón, un temible narcotraficante que Vito logró hacer encerrar en el penal de Palmasola, ahora vive semiclandestino en la localidad beniana de Rurrenabaque.
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <h1>Registrate ahora</h1>
-        <form action="">
-            <label for="">Ingresa tu nombre de usuario:</label>
-            <input type="text">
-            <label for="">Ingresa tu correo:</label>
-            <input type="email">
-            <label for="">Ingresa tu constrasena:</label>
-            <input type="password">
-            <input type="button" value="Registrarme" class="boton_registro">
-        </form>
-        <label for="">Ya tienes cuenta?</label>
-        <a href="C:\Users\ROGER\OneDrive\Escritorio\PROGRAMACION WEB\La Bolivianita\La-Bolivianita\Inicio_sesion.html">Iniciar Sesion</a>
     </div>
     <script src="js.js"></script>
 </body>
