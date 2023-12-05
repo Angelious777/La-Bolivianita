@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Bolivianita.png" />
+    <title>La Bolivianita</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://cdn.pixabay.com/photo/2017/01/25/17/35/picture-2008484_1280.png" alt="">
+            <img src="Bolivianita.png" alt="">
             <p>La Bolivianita</p>
         </div>
         <div class="menu">
@@ -75,30 +76,59 @@
         </div>    
     </div>
     <div class="cuadro" style="color: white;">
-        <h1>Tenemos las peliculas mas relevantes en la historia de Bolivia</h1>
+        <h1>Tenemos las peliculas mas relevantes en la historia de <div class="texto_bolivia"><label for="" style="color: red;">Bo</label><label for="" style="color: yellow;">li</label><label for="" style="color: rgb(19, 199, 19);">via</label></div></h1>
         <div class="mostrador">
             <div class="botones_mostrador">
                 <ul>
-                    <li>Mas Popular</li>
-                    <li>Ultima Pelicula Publicada</li>
-                    <li>Los Clasicos</li>
+                    <li><button class="popular" id="popular" onclick="mas_popular()">Mas Popular</button></li>
+                    <li><button class="ultima" id="ultima" onclick="ultima_pub()">Ultima Publicada</button></li>
+                    <li><button class="clasico" id="clasico" onclick="los_clasicos()">Los Clasicos</button></li>
                 </ul>
             </div>
             <div class="cuadros_mostrador">
 
 
-                <div class="cuadro_populares">
+                <div class="cuadro_populares" id="cuadro_populares">
                     <div class="imagen">
-                        <div class="titulo_imagen">
-                            Mi Socio 2
-                        </div>
-                        <img src="https://pics.filmaffinity.com/Mi_socio_2_0-257209535-large.jpg" alt="">
+                        <img src="https://pics.filmaffinity.com/el_cementerio_de_los_elefantes-951708168-large.jpg" alt="">
                     </div> 
                     <div class="texto_cuadro">
-                        Sinopsis: <br>
+                        <div class="titulo_peli">
+                            Cementerio de Elefantes
+                        </div>
+                        <h2>Sinopsis:</h2>
+                        Sinopsis: Juvenal un hombre de treinta y tres años, alcohólico desde sus catorce años, decide ir a pasar sus últimos días de vida, en el “Cementerio de los Elefantes, un local que es preferido por epedernidos alcohólicos de la ciudad de La Paz. En ese sitio existe la “Suite Presidencial”, un cuarto inmundo en el que Juvenal pasará sus últimos siete días, recordando su oscura niñez y su tenebrosa juventud, sólo estos recuerdos acompañarán su decisión de beber alcochol hasta morir. El Cementerio de los Elefantes, pone en evidencia una realidad cruda y desconocida del submundo de la ciudad de La Paz
+                    </div>
+                </div>
+
+
+                <div class="cuadro_ultima" id="cuadro_ultima">
+                    <div class="texto_cuadro">
+                        <div class="titulo_peli">
+                            Mi Socio 2.0
+                        </div>
+                        <h2>Sinopsis:</h2>
+                        En Mi Socio 2.0, Vito (70 años) sigue en sus acostumbradas y azarosas andanzas: después de lograr zafarse de un pleito de dinero y chantajes con el Patrón, un temible narcotraficante que Vito logró hacer encerrar en el penal de Palmasola, ahora vive semiclandestino en la localidad beniana de Rurrenabaque.
+                    </div>
+                    <div class="imagen">
+                        <img src="https://pics.filmaffinity.com/Mi_socio_2_0-257209535-large.jpg" alt="">
+                    </div> 
+                </div>
+
+
+                <div class="cuadro_clasico" id="cuadro_clasico">
+                    <div class="imagen">
+                        <img src="https://rcbolivia.com/wp-content/uploads/2021/09/bicicleta-huanca-5.jpg" alt="">
+                    </div> 
+                    <div class="texto_cuadro">
+                        <div class="titulo_peli">
+                            La Bicicleta de los Huanca
+                        </div>
+                        <h2>Sinopsis:</h2>
                         En Mi Socio 2.0, Vito (70 años) sigue en sus acostumbradas y azarosas andanzas: después de lograr zafarse de un pleito de dinero y chantajes con el Patrón, un temible narcotraficante que Vito logró hacer encerrar en el penal de Palmasola, ahora vive semiclandestino en la localidad beniana de Rurrenabaque.
                     </div>
                 </div>
+
 
             </div>
         </div>
