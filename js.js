@@ -71,3 +71,15 @@ function validatePassword() {
         alert("La contraseña no cumple con los requisitos.");
     }
 }
+
+function registro() {
+    var password = document.getElementById("password").value;
+    var regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+    if (regex.test(password)) {
+        alert("Contraseña válida. ¡Registro exitoso!");
+        window.location.href = "Peliculas.html";
+    } else {
+        alert("La contraseña no cumple con los requisitos.");
+    }
+}

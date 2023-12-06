@@ -1,0 +1,26 @@
+.iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.iconos img{
+    height: 100%;
+    width: 100%;
+}
+
+.iconos .watsap{
+    height: 90px;
+    width: 90px;
+}
+
+.iconos .facebok{
+    height: 140px;
+    width: auto;
+}
+
+.iconos .insta{
+    height: 80px;
+    width: auto;
+}

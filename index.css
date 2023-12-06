@@ -281,7 +281,7 @@ header .menu ul li  a .sombra:hover{
 }
 
 .inicio_sesion{
-    background-color: #452a65;
+    background-color: #504360;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -304,6 +304,10 @@ header .menu ul li  a .sombra:hover{
     width: 150px;
     margin: auto;
     padding: 5px;
+}
+
+.inicio_sesion form a{
+    color: white;
 }
 
 .cuadro{
@@ -484,6 +488,7 @@ header .menu ul li  a .sombra:hover{
 .section_cartilla .catalogo h1{
     text-align: center;
     padding: 20px;
+    font-size: 50px;
 }
 
 .section_cartilla .catalogo .cartilla{
@@ -589,4 +594,29 @@ header .menu ul li  a .sombra:hover{
 
 .targeta:hover .lateral{
     transform: perspective(600px) rotateY(360deg);
+}
+
+.targeta_contacto{
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    width: 80%;
+    background-color: #504360;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.targeta_contacto ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.targeta_contacto ul li{
+    list-style: none;
 }
