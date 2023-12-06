@@ -8,7 +8,23 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+    background-color: #3d3d3d;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+    transition: 1s;
+    transform: 1s;
+    border: 2px solid rgba(255, 255, 255, 0.438);
+}
+body::-webkit-scrollbar-thumb{
+    background: #435060;
+    transition: 1s;
+    transform: 1s;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #A38D53;
+    transition: 1s;
+    transform: 1s;
 }
 
 header{
@@ -289,13 +305,15 @@ header .menu ul li  a .sombra:hover{
 }
 
 .cuadro{
-    background: purple;
+    background: #504360;
     margin: 50px;
+    margin-bottom: 10px;
     padding: 30px;
     padding-inline: 60px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 
 .cuadro h1{
@@ -447,4 +465,126 @@ header .menu ul li  a .sombra:hover{
 }
 .cuadro .mostrador .botones_mostrador .clasico{
     background-color: transparent;
+}
+
+.section_cartilla{
+    padding: 50px;
+    color: white;
+}
+
+.section_cartilla .catalogo{
+    background-color: #504360;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_cartilla .catalogo h1{
+    text-align: center;
+    padding: 20px;
+}
+
+.section_cartilla .catalogo .cartilla{
+    display: flex;
+    margin-inline: 50px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #A38D53;
+}
+
+.section_cartilla .catalogo .texto_cartilla{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section_cartilla .catalogo .texto_cartilla a{
+    text-decoration: none;
+}
+
+.section_cartilla .catalogo .texto_cartilla button{
+    padding: 10px;
+    padding-inline: 30px;
+    margin: 10px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+}
+
+.section_cartilla .catalogo .imagen_cartilla{
+    width: 100%;
+}
+
+.section_cartilla .catalogo .imagen_cartilla img{
+    width: 100%;
+}
+
+.contenedor_targetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.targeta{
+    position: relative;
+    width: 250px;
+    height: 400px;
+}
+
+.targeta .cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.targeta .frontal{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.targeta .frontal img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.targeta .lateral{
+    transform: perspective(600px) rotateY(180deg);
+    background: #452a65;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.targeta .lateral .link{
+    border-top: 1px solid white;
+    height: 50px;
+    line-height: 50px;
+}
+
+.targeta .lateral .link a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.targeta:hover .frontal{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.targeta:hover .lateral{
+    transform: perspective(600px) rotateY(360deg);
 }
