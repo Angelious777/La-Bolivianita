@@ -11,12 +11,14 @@
         <label for=""><h1>Inicia sesion</h1></label>
         <form action="">
             <label for="">Ingresa tu Nombre de Usuario</label>
-            <input type="text">
+            <input type="text" id="name">
             <label for="">Ingresa tu contrasena</label>
-            <input type="password">
-            <input type="button" value="Iniciar Sesion" class="boton_inicio">
+            <input type="password" id="password">
+            <input type="button" value="Iniciar Sesion" class="boton_inicio" onclick="validatePassword()">
             <a href="Peliculas.html">(prueba) peliculas</a>
+            <label for="">No tienes cuenta? <a href="index.html">Registrate</a></label>
         </form>
     </div>
+    <script src="js.js"></script>
 </body>
 </html>

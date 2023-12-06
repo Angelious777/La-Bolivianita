@@ -58,3 +58,16 @@ function los_clasicos(){
     document.getElementById("clasico").style.backgroundColor ="dimgray";
 
 }
+
+
+function validatePassword() {
+    var password = document.getElementById("password").value;
+    var regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+    if (regex.test(password)) {
+        alert("Contraseña válida. ¡Registro exitoso!");
+        window.location.href = "Peliculas.html";
+    } else {
+        alert("La contraseña no cumple con los requisitos.");
+    }
+}
